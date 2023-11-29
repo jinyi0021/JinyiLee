@@ -26,7 +26,7 @@ const annotationClicked = (annotation) => {
 
   // Change texture functionality for model1
   document.getElementById("change-texture").addEventListener("click", function() {
-    document.getElementById("model1").src = "./models/darkbrownlether.glb";
+    document.getElementById("model1").src = "./models/darkbrownleather.glb";
     document.getElementById("model-info2").style.display = "block";
   });
   
