@@ -23,7 +23,15 @@ const annotationClicked = (annotation) => {
   model.fieldOfView = '30deg';
 };
 
+const modelIds = ['model', 'model1', 'model2'];
 
+// 각 모델에 대해 반복하면서 스타일을 적용
+modelIds.forEach(modelId => {
+  const modelViewer = document.getElementById(modelId);
+
+
+  modelViewer.style.transform = 'scale(2.2)';
+});
   
   // Change texture functionality for model1
   document.getElementById("change-texture").addEventListener("click", function() {
