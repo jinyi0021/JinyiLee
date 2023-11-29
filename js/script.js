@@ -25,7 +25,6 @@ const annotationClicked = (annotation) => {
 
 const modelIds = ['model', 'model1', 'model2'];
 
-// 각 모델에 대해 반복하면서 스타일을 적용
 modelIds.forEach(modelId => {
   const modelViewer = document.getElementById(modelId);
 
