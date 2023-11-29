@@ -5,8 +5,8 @@
 }
 
 .banner-container img {
-    width: 100%; /* 이미지를 부모 요소의 100%로 설정하여 가로폭에 맞춤 */
-    height:auto; /* 세로는 자동으로 조정되어 비율을 유지 */
+    width: 100%; 
+    height:auto; 
 }
 
 .model-container {
