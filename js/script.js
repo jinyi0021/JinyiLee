@@ -22,9 +22,15 @@ const annotationClicked = (annotation) => {
   model.cameraTarget = dataset.target;
   model.fieldOfView = '30deg';
 };
+const modelIds = ['model', 'model1', 'model2'];
+
+modelIds.forEach(modelId => {
+  const modelViewer = document.getElementById(modelId);
 
 
-  
+  modelViewer.style.transform = 'scale(2.2)';
+});
+
   // Change texture functionality for model1
   document.getElementById("change-texture").addEventListener("click", function() {
     document.getElementById("model1").src = "/models/darkbrownleather.glb";
