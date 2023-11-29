@@ -26,7 +26,7 @@ const annotationClicked = (annotation) => {
 
   // Change texture functionality for model1
   document.getElementById("change-texture").addEventListener("click", function() {
-    document.getElementById("model1").src = "./models/darkbrownfabric.glb";
+    document.getElementById("model1").src = "./models/darkbrownlether.glb";
     document.getElementById("model-info2").style.display = "block";
   });
   
@@ -37,7 +37,7 @@ const annotationClicked = (annotation) => {
   });
   
   // Example with multiple models for model1
-  var myModels1 = ["./models/darkbrownfabric.glb", "./models/darkbrownleather.glb", "./models/darkbrowndirty.glb"];
+  var myModels1 = ["./models/darkbrownleather.glb", "./models/darkbrowndirty.glb"];
   var counter1 = 0;
   document.getElementById("change-texture").addEventListener("click", function() {
     counter1++;
