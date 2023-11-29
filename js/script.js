@@ -29,7 +29,7 @@ modelIds.forEach(modelId => {
   const modelViewer = document.getElementById(modelId);
 
 
-  modelViewer.style.transform = 'scale(2.5)';
+  modelViewer.style.transform = 'scale(2.2)';
 });
   
   // Change texture functionality for model1
