@@ -33,18 +33,18 @@ modelIds.forEach(modelId => {
 
   // Change texture functionality for model1
   document.getElementById("change-texture").addEventListener("click", function() {
-    document.getElementById("model1").src = "/models/darkbrownleather.glb";
+    document.getElementById("model1").src = "./models/darkbrownleather.glb";
     document.getElementById("model-info2").style.display = "block";
   });
   
   // Change texture functionality for model2
   document.getElementById("change-colour2").addEventListener("click", function() {
-    document.getElementById("model2").src = "/models/orange1.glb";
+    document.getElementById("model2").src = "./models/orange1.glb";
     document.getElementById("model-info3").style.display = "block";
   });
   
   // Example with multiple models for model1
-  var myModels1 = ["/models/darkbrowntwillfabric.glb", "/models/darkbrownleather.glb", "/models/darkbrowndirty.glb"];
+  var myModels1 = ["./models/darkbrowntwillfabric.glb", "./models/darkbrownleather.glb", "./models/darkbrowndirty.glb"];
   var counter1 = 0;
   document.getElementById("change-texture").addEventListener("click", function() {
     counter1++;
