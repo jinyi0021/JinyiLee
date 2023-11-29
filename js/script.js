@@ -32,7 +32,7 @@ const annotationClicked = (annotation) => {
   
   // Change texture functionality for model2
   document.getElementById("change-colour2").addEventListener("click", function() {
-    document.getElementById("model2").src = "./models/orange1.glb";
+    document.getElementById("model2").src = "./models/purple.glb";
     document.getElementById("model-info3").style.display = "block";
   });
   
