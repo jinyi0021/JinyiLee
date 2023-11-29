@@ -1,5 +1,5 @@
 var model = document.getElementById("model");
-var colors = ["/models/blue.glb", "/models/lightbrown.glb"]; 
+var colors = ["./models/blue.glb", "./models/lightbrown.glb"]; 
 var currentColorIndex = 1; 
 
 // simple change color
