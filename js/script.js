@@ -55,7 +55,7 @@ modelIds.forEach(modelId => {
   });
   
   // Example with multiple models for model2
-  var myModels2 = ["/models/purple.glb", "/models/orange1.glb", "/models/red.glb"];
+  var myModels2 = ["./models/purple.glb", "./models/orange1.glb", "./models/red.glb"];
   var counter2 = 0;
   document.getElementById("change-colour2").addEventListener("click", function() {
     counter2++;
