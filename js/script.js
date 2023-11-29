@@ -22,14 +22,7 @@ const annotationClicked = (annotation) => {
   model.cameraTarget = dataset.target;
   model.fieldOfView = '30deg';
 };
-const modelIds = ['model', 'model1', 'model2'];
 
-modelIds.forEach(modelId => {
-  const modelViewer = document.getElementById(modelId);
-
-
-  modelViewer.style.transform = 'scale(2.2)';
-});
 
   // Change texture functionality for model1
   document.getElementById("change-texture").addEventListener("click", function() {
@@ -55,7 +48,7 @@ modelIds.forEach(modelId => {
   });
   
   // Example with multiple models for model2
-  var myModels2 = ["./models/purple.glb", "./models/orange1.glb", "./models/red.glb"];
+  var myModels2 = ["./models/purple.glb", "./models/orange.glb", "./models/red.glb"];
   var counter2 = 0;
   document.getElementById("change-colour2").addEventListener("click", function() {
     counter2++;
@@ -65,6 +58,14 @@ modelIds.forEach(modelId => {
     document.getElementById("model2").src = myModels2[counter2];
   });
   
+  const modelIds = ['model', 'model1', 'model2'];
+
+  modelIds.forEach(modelId => {
+  const modelViewer = document.getElementById(modelId);
+
+
+  modelViewer.style.transform = 'scale(2.2)';
+});
   
   
   
