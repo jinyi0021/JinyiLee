@@ -11,21 +11,23 @@
 
 .model-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap; /* Set to nowrap to prevent items from wrapping to the next line */
     margin: 0 auto;
-   
 }
-
 
 
 .model-group {
-    /* Remove display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
-    margin-right: 80px;
+    margin-top: 20px; /* Adjust this value to control the spacing between model groups */
 }
+
+.model-group model-viewer {
+    margin-bottom: 20px; /* Adjust this value to control the spacing between models */
+}
+
 
 model-viewer {
     margin-bottom: 10px;
