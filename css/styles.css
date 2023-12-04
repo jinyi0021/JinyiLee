@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; /* Adjust this value to control the spacing between model groups */
+    margin-top: 300px; /* Adjust this value to control the spacing between model groups */
 }
 
 .model-group model-viewer {
@@ -56,7 +56,7 @@ model-viewer {
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 h1 {
