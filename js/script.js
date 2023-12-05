@@ -55,7 +55,7 @@ const annotationClicked = (annotation) => {
   document.getElementById("changeImageBtn").addEventListener("click", function() {
     var modelViewer = document.getElementById("model1");
     if (modelViewer) {
-        if (modelViewer.src === "./models/darkbrownsoft.glb") {
+        if (modelViewer.src === "./models/darkbrowndirty.glb") {
             modelViewer.src = "./models/darkbrownleather.glb"; 
         } else {
             modelViewer.src = "./models/darkbrowndirty.glb";
