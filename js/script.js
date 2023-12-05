@@ -1,5 +1,5 @@
 var model = document.getElementById("model");
-var colors = ["./models/finalblue.glb", "./models/finallightbrown.glb"]; 
+var colors = ["./models/blue01.glb", "./models/lightbrown01.glb"]; 
 var currentColorIndex = 1; 
 
 // simple change color
@@ -35,14 +35,14 @@ const annotationClicked = (annotation) => {
  
   // Change colour functionality for model
   document.getElementById("change-colour2").addEventListener("click", function() {
-    document.getElementById("model2").src = "./models/purple.glb";
+    document.getElementById("model2").src = "./models/purple01.glb";
     document.getElementById("model-info3").style.display = "block";
   });
   
  
 
   // Example with multiple models for model1
-  var myModels1 = ["./models/darkbrownleather.glb", "./models/darksoft2.glb"];
+  var myModels1 = ["./models/darkbrownleather.glb", "./models/darkbrownsoft.glb"];
   var counter1 = 0;
   document.getElementById("change-texture").addEventListener("click", function() {
     counter1++;
@@ -57,10 +57,10 @@ const annotationClicked = (annotation) => {
     var modelViewer = document.getElementById("model1");
     if (modelViewer) {
         
-        if (modelViewer.src === "./models/darksoft.glb") {
+        if (modelViewer.src === "./models/darkbrownsoft.glb") {
             modelViewer.src = "./models/darkbrownleather.glb"; 
         } else {
-            modelViewer.src =  "./models/darksoft.glb"; // 새 이미지로 변경
+            modelViewer.src =  "./models/darkbrownsoft.glb"; 
         }
         
     }
@@ -68,7 +68,7 @@ const annotationClicked = (annotation) => {
 
 
   // Example with multiple models for model2
-  var myModels2 = ["./models/purple.glb", "./models/orange.glb", "./models/red.glb"];
+  var myModels2 = ["./models/purple01.glb", "./models/orange01.glb", "./models/red01.glb"];
   var counter2 = 0;
   document.getElementById("change-colour2").addEventListener("click", function() {
     counter2++;
