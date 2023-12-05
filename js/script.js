@@ -42,7 +42,7 @@ const annotationClicked = (annotation) => {
  
 
   // Example with multiple models for model1
-  var myModels1 = ["./models/darkbrownleather.glb", "./models/darkbrowndirty.glb"];
+  var myModels1 = ["./models/darkbrownleather.glb", "./models/darksoft2.glb"];
   var counter1 = 0;
   document.getElementById("change-texture").addEventListener("click", function() {
     counter1++;
