@@ -78,15 +78,7 @@ const annotationClicked = (annotation) => {
     document.getElementById("model2").src = myModels2[counter2];
   });
   
-  const modelIds = ['model', 'model1', 'model2'];
 
-  modelIds.forEach(modelId => {
-  const modelViewer = document.getElementById(modelId);
-
-
-  modelViewer.style.transform = 'scale(3.5)';
-});
-  
   
   
   

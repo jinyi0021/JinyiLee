@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px; /* Adjust this value to control the spacing between model groups */
+    margin-top: 100px; /* Adjust this value to control the spacing between model groups */
 }
 
 .model-group model-viewer {
@@ -39,8 +39,15 @@ model-viewer {
     color: rgb(9, 47, 34);
     border-radius: 5px;
     padding: 3px;
-    transform: scale(0.5);
+    transform: scale(2);
 }
+
+.larger-example {
+    width: 900px;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+}
+
 
 #model-info {
     display: none;
@@ -57,7 +64,7 @@ model-viewer {
     max-width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 250px;
+    margin-top: 50px;
 }
 
 h1 {
