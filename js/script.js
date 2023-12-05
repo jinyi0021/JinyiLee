@@ -52,19 +52,18 @@ const annotationClicked = (annotation) => {
     document.getElementById("model1").src = myModels1[counter1];
   });
   
-
   document.getElementById("changeImageBtn").addEventListener("click", function() {
     var modelViewer = document.getElementById("model1");
     if (modelViewer) {
-        
         if (modelViewer.src === "./models/darkbrownsoft.glb") {
             modelViewer.src = "./models/darkbrownleather.glb"; 
         } else {
-            modelViewer.src =  "./models/darkbrownsoft.glb"; 
+            modelViewer.src = "./models/darkbrowndirty.glb";
+         
         }
-        
     }
 });
+
 
 
   // Example with multiple models for model2
