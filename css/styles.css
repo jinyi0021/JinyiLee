@@ -39,7 +39,7 @@ model-viewer {
     color: rgb(9, 47, 34);
     border-radius: 5px;
     padding: 3px;
-    transform: scale(0.4);
+    transform: scale(0.5);
 }
 
 #model-info {
