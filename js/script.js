@@ -30,22 +30,18 @@ const annotationClicked = (annotation) => {
     document.getElementById("model-info2").style.display = "block";
   });
   
-  // Change texture functionality for model
-  document.getElementById("change-texture").addEventListener("click", function() {
-    document.getElementById("model1").src = "./models/darksoft.glb";
-    document.getElementById("model-info3").style.display = "block";
-  });
+ 
  
  
   // Change colour functionality for model
   document.getElementById("change-colour2").addEventListener("click", function() {
     document.getElementById("model2").src = "./models/purple.glb";
-    document.getElementById("model-info2").style.display = "block";
+    document.getElementById("model-info3").style.display = "block";
   });
   
  
 
-  // Example with multiple models for model
+  // Example with multiple models for model1
   var myModels1 = ["./models/darkbrownleather.glb", "./models/darkbrowndirty.glb"];
   var counter1 = 0;
   document.getElementById("change-texture").addEventListener("click", function() {
@@ -56,18 +52,7 @@ const annotationClicked = (annotation) => {
     document.getElementById("model1").src = myModels1[counter1];
   });
   
-   // Example with multiple models for model
-   var myModels1 = ["./models/darksoft.glb", "./models/darksoft2.glb"];
-   var counter1 = 0;
-   document.getElementById("change-texture").addEventListener("click", function() {
-     counter1++;
-     if (counter1 == myModels1.length) {
-         counter1 = 0;
-     }
-     document.getElementById("model1").src = myModels1[counter1];
-   });
-
-  // Example with multiple models for model
+  // Example with multiple models for model2
   var myModels2 = ["./models/purple.glb", "./models/orange.glb", "./models/red.glb"];
   var counter2 = 0;
   document.getElementById("change-colour2").addEventListener("click", function() {
