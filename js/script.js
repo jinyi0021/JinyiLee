@@ -52,6 +52,21 @@ const annotationClicked = (annotation) => {
     document.getElementById("model1").src = myModels1[counter1];
   });
   
+
+  document.getElementById("changeImageBtn").addEventListener("click", function() {
+    var modelViewer = document.getElementById("model1");
+    if (modelViewer) {
+        
+        if (modelViewer.src === "./models/darksoft.glb") {
+            modelViewer.src = "./models/darkbrownleather.glb"; 
+        } else {
+            modelViewer.src =  "./models/darksoft.glb"; // 새 이미지로 변경
+        }
+        
+    }
+});
+
+
   // Example with multiple models for model2
   var myModels2 = ["./models/purple.glb", "./models/orange.glb", "./models/red.glb"];
   var counter2 = 0;
