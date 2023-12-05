@@ -13,8 +13,8 @@ document.getElementById("change-colour").addEventListener("click", function(e) {
 });
 
 // example with showing content
-model.querySelectorAll('button').forEach((hotspot) => {
-  hotspot.addEventListener('click', () => annotationClicked(hotspot));
+model.querySelectorAll('button').forEach((Hotspot) => {
+  Hotspot.addEventListener('click', () => annotationClicked(Hotspot));
 });
 
 const annotationClicked = (annotation) => {
