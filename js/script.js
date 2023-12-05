@@ -64,7 +64,7 @@ const annotationClicked = (annotation) => {
   const modelViewer = document.getElementById(modelId);
 
 
-  modelViewer.style.transform = 'scale(3.5)';
+  modelViewer.style.transform = 'scale(4)';
 });
   
   
