@@ -20,7 +20,7 @@ model.querySelectorAll('button').forEach((Hotspot) => {
 const annotationClicked = (annotation) => {
   let dataset = annotation.dataset;
   model.cameraTarget = dataset.target;
-  model.fieldOfView = '30deg';
+  model.fieldOfView = '10deg';
 };
 
 
