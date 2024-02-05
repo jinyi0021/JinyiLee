@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     transition: 0.5s;
+    font-family:'Gowun Batang', sans-serif;
     }
 
 /* Small devices (i.e. tablets in portrait) */
@@ -97,11 +98,49 @@ a:visited {
 .btn:hover:visited {
     color: var(--black);
     }
+
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: var(--white);
+        padding: 20px; /* 추가된 부분 */
+      }
+      
+main {
+    position: relative;
+    z-index:1;
+    
+}
+
+.treausre.html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* You might need to set a specific height to center vertically */
+    grid-column: 1/-1;
+}
+
+.portfolio-item {
+   
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    /* Add your hover effect styles here */
+}
+
+.portfolio-item img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain the aspect ratio */
+    
+}
+
+
+
 
 nav {
         display: flex;
@@ -110,9 +149,10 @@ nav {
         overflow: hidden;
         background: var(--white);
         height: 170px; /* 필요에 따라 조정하세요 */
+        z-index:3;
     }
 
-    nav ul {
+nav ul {
         display: flex;
         list-style-type: none;
         flex-wrap: wrap;
@@ -134,15 +174,19 @@ nav ul li a:hover {
     background: var(--accent-colour);
     }
 #logo {
-        margin-right: auto;
+        margin-top:-10px;
+        margin-left:80px;
+        margin-right: 1000px;
         text-align: left;
+        height: auto;
         }
 #logo img {
-        height: 2rem;
-        width: auto;
-        }
+    width: 100px; /* Adjust the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 #menu-icon, #close-icon {
-        margin-left: auto;
+        margin-left:auto;
         text-align: right;
         font-size: 40px;
         margin-top: 0px;
@@ -171,26 +215,57 @@ nav ul li a:hover {
 
 
 /* Styling for the Sections */
+
+#portfolio .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Set the gap between items */
+}
+
+#portfolio .item {
+    width: calc(50% - 10px); /* Adjust the width and gap as needed */
+    box-sizing: border-box;
+}
+
+#portfolio .item-content {
+    display: flex;
+}
+
+#portfolio .item-content picture {
+    width: 50%; /* Adjust the width of the picture container */
+    margin-right: 10px; /* Set the margin between picture and details */
+}
+
+#portfolio .item-details {
+    width: 50%; /* Adjust the width of the details container */
+}
+
+  
+  /* Adjust styling for different screen sizes if needed */
+  
+
 section {
     display: grid;
     min-height: calc(100vh - var(--section-padding-top));
     padding-top: var(--section-padding-top);
     grid-template-columns: 5% 1fr 5%;
-    align-content: start;
-    }
-    section > * {
+    align-content: center;
+    z-index:0;
+}  
+section > * {
     grid-column: 2;
     }
 
 
 
-    #introduction {
+#introduction {
         align-content: center;
      
-        }
-        body {
-            font-family: 'Nunito Sans', sans-serif;
-        }
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+     }
 
 
 img {
