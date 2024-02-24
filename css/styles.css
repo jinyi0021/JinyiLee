@@ -1,0 +1,108 @@
+.banner-container {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.banner-container img {
+    width: 100%; 
+    height:auto; 
+}
+
+.model-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /* Set to nowrap to prevent items from wrapping to the next line */
+    margin: 0 auto;
+}
+
+
+.model-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Adjust this value to control the spacing between model groups */
+}
+
+.model-group model-viewer {
+    margin-bottom: 20px; /* Adjust this value to control the spacing between models */
+}
+
+
+model-viewer {
+    margin-bottom: 10px;
+}
+
+
+.Hotspot {
+    background-color: #ffffff;
+    color: rgb(9, 47, 34);
+    border-radius: 5px;
+    padding: 3px;
+    transform: scale(2);
+}
+
+.larger-example {
+    width: 600px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#model-info {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+.model-info {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top:30px;
+    color :#333;
+    font-size:50px;
+    text-align: center; 
+    
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size:30px;
+}
+
+p {
+    margin: 0 0 10px;
+    color: #555;
+    font-size:30px;
+}
+
+#purchase-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

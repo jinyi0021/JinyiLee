@@ -1,253 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <title>Jinyi's Portfolio Site - Designer, Coder, and Tinkerer</title>
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
 
-  </head>
-  <body>
-        <nav>
-          <ul>
-            <li id="logo">
-              <a href="index.html#introduction">
-                <img
-                  src="images/logover5.png"
-                  alt="Jinyi logo"
-                />
-              </a>
-            </li>
-            <li id="menu-icon"><a href="#"><i class="fa-solid fa-bars" title="Open the menu"></i></a></li>
-            <li id="close-icon">
-              <a href="#"><i class="fa-solid fa-x" title="Close the menu"></i></a>
-              </li>
-              <li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </nav>
+<body>
 
-      <main>
-            <section id="introduction">
-                <h1>Hi There <span aria-hidden="true">👋</span>, my name is Jinyi. I'm a designer and coder. I enjoy appreciating different perspectives. </h1>
-                <a class="btn" href="index.html#portfolio">View My Work</a>
-            </section>
+    <div class="banner-container">
+        <img src="heroimage01.png" alt="Banner Image">
+    </div>
+    <h1> Jinyi's Picks</h1>
+    <div class="model-container">
+        <div class="model-group">
+            <model-viewer id="model" class="larger-example" src="./models/blue02.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster01.webp" shadow-intensity="2">
+                <button id="change-colour" class="Hotspot" slot="hotspot-1" data-position="-0.24462271005400027m 0.527094956884221m -0.27987364024726524m" data-target="0.24462271005400027m 0.927094956884221m -0.27987364024726524m" data-normal="-0.3293704410321221m 0.436550608196851m 0.8372208066318377m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Change Colour</div>
+                </button>
+            </model-viewer>
+            <div id="model-info1" class="model-info">
+                <h2>1-person Armchair</h2>
+                <h3>Texture:</h3>
+                <p>Finished with a denim texture,</p>
+                <p>providing a sturdy and comfortable feel.</p>
+                <h3>Size:</h3>
+                <p>Width 82cm x Depth 96cm x Height 105cm</p>
+                <h3>Color:</h3>
+                <p>Blue/Light Brown</p>
+                <button id="purchase-button">Purchase</button>
+            </div>
+        </div>
         
-            <section id="portfolio">
-
-                
-            <h2>My work</h2>
-                <div class="treausre.html">
-                    <a href="#" class="portfolio-item">
-                        <picture>
-                            <source srcset="images/poster1 urbanstyle125@1.5x" media="(min-width:800px)"/>
-                            <source srcset="images/poster1 urbanstyle.jpg">
-                            <img src="images/poster1 urbanstyle_crop.jpg" alt="poster for indigo" />
-                        </picture>
-                        <h3>Poster design</h3>
-                        <p>
-                            Print, Art Direction, Typography
-                        </p>
-                    </a>
-                </div>
+        <div class="model-group">
+            <model-viewer id="model1" class="larger-example" src="./models/darkbrownleather01.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster02.webp" shadow-intensity="2">
+                <button id="change-texture" class="Hotspot" slot="hotspot-1" data-position="0.262271005400027m 0.727094956884221m -0.27987364024726524m" data-normal="-0.3293704410321221m 0.436550608196851m 0.8372208066318377m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Change Texture</div>
+                </button>
+                <button class="Hotspot" slot="hotspot-2" id="changeImageBtn" data-position="-0.4072518521106724m -0.1713485666599477m -0.2300965504324129m" data-normal="-0.4558768418845041m -0.30701017493612154m 0.8354166969357886m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Popular item !</div>
+                </button>
+            </model-viewer>
             
-        
-                
-                    
-                    <div class="grid-container">
-                        <div class="item item-3">
-                            <a href="#">
-                                <div class="item-content">
-                                    <picture>
-                                        <img src="images/Minimal Coffee Cup Mockup.jpg" alt="iPhone with myHumber redesign screenshot"/>
-                                        <img src="images/tea bag mockup_Bloom.jpg" alt="iPhone with myHumber redesign screenshot"/>
-                                    </picture>
-                                    <div class="item-details">
-                                        <h3>Bloom cafe</h3>
-                                        <p>Print, Advertising, Packaging</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    
-                        <div class="item item-4">
-                            <a href="#">
-                                <div class="item-content">
-                                    <picture>
-                                        <source srcset="images/" media="(min-width:800px)" />
-                                        <source srcset="images/create_box_thumbnail@1x.webp" />
-                                        <img src="images/create_box_thumbnail@1x.jpg" alt="Create branded shipping box" />
-                                    </picture>
-                                    <div class="item-details">
-                                        <h3>Creates Promotional Mailer</h3>
-                                        <p>Packaging, Print, Art Direction</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+            <div id="model-info2" class="model-info">
+                <h2>1-person Bean Bag Chair</h2>
+                <h3>Texture:</h3>
+                <p>Crafted from various materials, offering a luxurious and warm feel to the touch.</p>
+                <h3>Size:</h3>
+                <p>Width 110cm x Depth 110cm x Height 85cm</p>
+                <h3>Color:</h3>
+                <p>Dark Brown</p>
+                <h3>Texture:</h3>
+                <p>Leather/Twill fabric</p>
+                <h3>Popular Item:</h3>
+                <p>Dark stripes</p>
+                <button id="purchase-button">Purchase</button>
+            </div>
+        </div>
 
-                        <div class="item item-5">
-                            <a href="#">
-                                <div class="item-content">
-                                    <picture>
-                                        <source srcset="images/mobile_mockup_thumbnail@2x.webp" media="(min-width:800px)" />
-                                        <source srcset="images/mobile_mockup_thumbnail@1x.jpg">
-                                        <img src="images/mobile_mockup_thumbnail@1x.jpg" alt="iPhone with myHumber redesign screenshot" />
-                                    </picture>
-                                    <div class="item-details">
-                                        <h3>Adidas Launch Campaign</h3>
-                                        <p>Print, Advertising, Social Media</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                        <!-- Add more items as needed -->
-  
-                        <div class="item item-5">
-                          <a href="#">
-                            <picture>
-                                <source srcset="images/bella_sign_thumbnail@2x.webp" media="(min-width:800px)"/>
-                                <source srcset="images/bella_sign_thumbnail@1x.webp"/>
-                                <img src="images/bella_sign_thumbnail@1x.jpg" alt="Bella branding shown on a building facade">
-                            </picture>
-                            <h3>Creates Promotional Mailer</h3>
-                            <p>Packaging, Print, Art Direction</p>
-                          </a>
-                        </div>
-                    
-                        <!-- Add more items as needed -->
-                    
-                      </div>
-                  
-              
+        <div class="model-group">
+            <model-viewer id="model2" class="larger-example" src="./models/purple01.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster03.webp" shadow-intensity="2">
+                <button id="change-colour2" class="Hotspot" slot="hotspot-1" data-position="0.94462271005400027m 0.757094956884221m -0.27987364024726524m" data-normal="-0.3293704410321221m 0.436550608196851m 0.8372208066318377m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Change Colour</div>
+                </button>
+            </model-viewer>
+            <div id="model-info3" class="model-info">
+                <h2>3-person Sofa</h2>
+                <h3>Texture:</h3>
+                <p>Made from a blend of materials, combining comfort with a modern look.</p>
+                <h3>Size:</h3>
+                <p>Width 190.5cm x Depth 63.5cm x Height 78.74cm</p>
+                <h3>Color:</h3>
+                <p>Purple/Orange/Red</p>
+                <button id="purchase-button">Purchase</button>
+            </div>
+        </div>
+
         
-            <section id="about">
-                <picture class="feature">
-                    <source srcset="images/" media="(min-width:800px)"/>
-                    <source srcset="images/"/>
-                    <img src="images/" alt="" />
-                </picture>
-                <h2>I'm a designer currently based in YYZ</h2>
-                <div class="two-columns">
-                    <p class="intro-paragraph">
-                        I am a talented designer and coder based in Toronto, Canada. From a young age,
-                        I have had an interest in tinkering with technology and understanding how things work.
-                        This curiosity eventually led me to pursue multiple degrees in Design. During my studies
-                        I taught myself how to code. This led to a career where I created products that combined
-                        design and code.
-                    </p>
-                    <p>
-                        Over the years, I have worked with clients in various industries, including healthcare,
-                        finance, and retail. I have designed websites, mobile apps, and even physical products.
-                        My attention to detail and ability to understand a client's needs have given me the
-                        ability to synthesize a problem into a client-focused product.
-                    </p>
-                </div>
-                <h2>Skills</h2>
-                <div class="two-columns-fixed">
-                    <h3>Design Methods</h3>
-                    <div class="three-columns">
-                        <ul>
-                            <li>Competitive Analysis</li>
-                            <li>User Interviews</li>
-                            <li>Usability Testing</li>
-                            <li>User Flows</li>
-                            <li>Wireframing</li>
-                        </ul>
-                        <ul>
-                            <li>Sketching</li>
-                            <li>Journey Mapping</li>
-                            <li>Affinity Diagrams</li>
-                            <li>Rapid Prototyping</li>
-                            <li>Prototyping</li>
-                        </ul>
-                    </div>
-                    <h3>Design Tools</h3>
-                    <div class="two-columns">
-                        <ul>
-                      <li>Illustrator</li>
-                      <li>Photoshop</li>
-                      <li>Adobe XD</li>
-                      <li>InDesign</li>
-                      <li>After Effects</li>
-                      <li>Premiere</li>
-                  </ul>
-                  <ul>
-                      <li>Figma</li>
-                      <li>Sketch</li>
-                      <li>Zeplin</li>
-                      <li>Webflow</li>
-                      <li>Flinto</li>
-                  </ul>
-            
-                    </div>
-                    <h3>Coding + Frameworks</h3>
-                    <div class="two-columns">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>C++</li>
-                            <li>PHP</li>
-                            <li>Python</li>
-                        </ul>
-                        <ul>
-                            <li>NodeJs</li>
-                            <li>React</li>
-                            <li>NodeRED</li>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
-      <section id="contact" class="inverted-colours">
-          <h2>Let's make something cool!</h2>
-          <p>
-              I'm currently looking for full time opportunities and I'm always open to chat
-              about design, code, or tinkering.
-          </p>
-          <p>Hit me up!</p>
-          <a class="btn" href="mailto:rbcp@humber.ca?subject=I%20want%20to%20hire%20RBCP&body=Hi,%20RBCP">jinyi0021@gmail.com</a>
-          <ul>
-              <li>
-                  <a href="#"><i class="fa fa-github" title="Visit my GitHub"></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa fa-linkedin" title="Visit my LinkedIn"></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa fa-youtube" title="Visit my YouTube"></i></a>
-              </li>
-              <li>
-                  <a href="#"><i class="fa fa-twitter" title="Visit my Twitter"></i></a>
-              </li>
-          </ul>
-          <p>RBCP ©2024</p>
-      </section>
-      </main>
-    <!-- Javascript –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://kit.fontawesome.com/8839f852de.js" crossorigin="anonymous"></script>
-    <script 
-      src="https://code.jquery.com/jquery-3.6.4.min.js" 
-      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
-      crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+
 </html>
